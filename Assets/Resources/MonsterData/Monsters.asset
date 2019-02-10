@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Monsters
+  m_EditorClassIdentifier: Assembly-CSharp:MSL:MonsterDataList
+  dataList:
+  - m_monsterType: 1
+    m_questions:
+    - Salut toi ! Dis, C'est quoi ta couleur favorite ?
+    - " Mais sinon, qu'est-ce que tu fais ici ? Tu t'es perdu ? Tu visites ?\t"
+    - "C\u2019est rare de voir des humains par ici ! Ils ne durent pas longtemps sur
+      l'\xEEle\u2026  "
+    - "Urrr... Je commence \xE0 avoir faim !"
+    - " Les autres n\u2019aiment pas trop les humains. Ils les trouvent ennuyeux et
+      faibles, mais moi c'est diff\xE9rent hein ! J\u2019aime bien l\u2019huma\u2026
+      euh les humains."
+    m_answerQ1:
+    - Euh... Vert ?
+    - Argh ! Un monstre !
+    - "Bleu \xE9videmment."
+    - Rouge.
+    m_answerQ2:
+    - "Je suis venu profiter de l\u2019oc\xE9an."
+    - "J'ai \xE9t\xE9 pi\xE9g\xE9."
+    - "Je suis venu draguer \tles indig\xE8nes"
+    - Oh mon dieu ce sont des os humains !
+    m_answerQ3:
+    - Je ne suis pas humain ! Absolument pas humain !
+    - 'Je dois partir. '
+    - "L\u2019important, c\u2019est de s\u2019adapter pour survivre et surmonter les
+      obstacles sur son chemin "
+    - Ne durent pas longtemps ?
+    m_answerQ4:
+    - Moi aussi.
+    - Je dois vraiment partir.
+    - "J\u2019ai vu un crabe... l\xE0-bas !"
+    - "Euh\u2026"
+    m_answerQ5:
+    - "Tol\xE9rance est preuve d\u2019intelligence."
+    - Je ne sais pas comment je dois le prendre...
+    - Les autres sont des idiots.
+    - "Je suis s\xFBr que je n\u2019ai pas bon go\xFBt."

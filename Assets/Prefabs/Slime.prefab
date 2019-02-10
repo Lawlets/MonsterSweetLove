@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1554672038167624}
+  m_IsPrefabParent: 1
+--- !u!1 &1381405339561566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4040264244472902}
+  - component: {fileID: 212116875988961680}
+  m_Layer: 0
+  m_Name: flamby_pose1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1554672038167624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4491730601417748}
+  - component: {fileID: 114707129471824702}
+  m_Layer: 0
+  m_Name: Slime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4040264244472902
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381405339561566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.67, y: -6.1, z: 0}
+  m_LocalScale: {x: 3.086366, y: 3.086366, z: 3.086366}
+  m_Children: []
+  m_Father: {fileID: 4491730601417748}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4491730601417748
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554672038167624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 156.8, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4040264244472902}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114707129471824702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554672038167624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067bca21c0a28a04cb47a6dd83e6de75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_monsterData:
+    m_monsterType: 1
+    m_questions:
+    - Salut toi ! Dis, C'est quoi ta couleur favorite ?
+    - Mais sinon, qu'est-ce que tu fais ici ? Tu t'es perdu ? Tu visites ?
+    - "C\u2019est rare de voir des humains par ici ! Ils ne durent pas longtemps sur
+      l'\xEEle\u2026"
+    - "Urrr... Je commence \xE0 avoir faim !"
+    - "Les autres n\u2019aiment pas trop les humains. Ils les trouvent ennuyeux et
+      faibles, mais moi c'est diff\xE9rent hein ! J\u2019aime bien l\u2019huma\u2026
+      euh les humains."
+    m_answerQ1:
+    - Euh... Vert ?
+    - 'Argh ! Un monstre ! '
+    - "Bleu \xE9videmment."
+    - Rouge.
+    m_answerQ2:
+    - "Je suis venu profiter de l\u2019oc\xE9an."
+    - "J'ai \xE9t\xE9 pi\xE9g\xE9. "
+    - "Je suis venu draguer les indig\xE8nes."
+    - Oh mon dieu ce sont des os humains !
+    m_answerQ3:
+    - Je ne suis pas humain ! Absolument pas humain !
+    - Je dois partir.
+    - "L\u2019important, c\u2019est de s\u2019adapter pour survivre et surmonter les
+      obstacles sur son chemin"
+    - Ne durent pas longtemps ?
+    m_answerQ4:
+    - Moi aussi.
+    - Je dois vraiment partir.
+    - "J\u2019ai vu un crabe... l\xE0-bas !"
+    - "Euh\u2026"
+    m_answerQ5:
+    - "Tol\xE9rance est preuve d\u2019intelligence. "
+    - "Je ne sais pas comment je dois le prendre...\t"
+    - Les autres sont des idiots.
+    - "Je suis s\xFBr que je n\u2019ai pas bon go\xFBt."
+  m_win: {fileID: 8300000, guid: b63887bbc7ffbc7449356ec5161a0f40, type: 3}
+  m_loose: {fileID: 8300000, guid: 035f9ae7940cf504c84337053b03407a, type: 3}
+  m_happy: {fileID: 8300000, guid: f9bea0cfa646aa841b40b28d4e3aafbf, type: 3}
+  m_fail: {fileID: 8300000, guid: 7f2e9a72892ed644693c3c0ea24a5b5c, type: 3}
+  m_interraction: {fileID: 8300000, guid: 461f206fa692d754b93cb4f4d0ec34fd, type: 3}
+  m_BasicPoseSprite: {fileID: 21300000, guid: fb3bc46843e833447bdc55bf5f74d485, type: 3}
+  m_HappyPoseSprite: {fileID: 21300000, guid: 399164dcb5e6b6a46a6c74841a55c748, type: 3}
+  m_AngryPoseSprite: {fileID: 21300000, guid: a47e27a398e7fda4f846e2e87281d6bd, type: 3}
+  m_gameOverSprite: {fileID: 21300000, guid: 4c46c5722f2aa6a40b1afb16c209cfa4, type: 3}
+  m_gameOverBackground: {fileID: 21300000, guid: a0df30c361ad90743b71337279ce7f62,
+    type: 3}
+  m_ahegaoSprite: {fileID: 0}
+  m_textBoxSprite: {fileID: 21300000, guid: 5d47fd9d22695c645a9b15812523945a, type: 3}
+  m_nameBoxSprite: {fileID: 21300000, guid: 93a4f6d64733d714ca9d02aa4061b8b3, type: 3}
+  m_intro: "Alors que tu marches le long du littoral, tu remarques une \xE9trange
+    flaque verte juste devant toi. D'un mouvement agile tu \xE9vites la masse gluante
+    et t'appr\xEAtes \xE0 continuer ton chemin. Soudain, tu entends comme un gargouillis
+    derri\xE8re toi. "
+  m_dialog: []
+  m_quote:
+  - 'Flatteur ! '
+  - Oui oui, salut...
+  - ' Pareil ! Je sens qu''on va bien s''entendre toi et moi !'
+  - "Urk, quel manque de go\xFBt !"
+  - "Hmm, \xE7a doit \xEAtre bien de pouvoir se baigner... "
+  - Ca arrive des fois, pauvre de toi !
+  - "Ahahah, un \xEAtre courageux ! Ca change ! "
+  - "H\xE9 ! Arr\xEAte de regarder !!! "
+  - "Menteur ! Je pourrais reconna\xEEtre l\u2019odeur d\u2019un humain \xE0 des kilom\xE8tres\u2026 "
+  - "Pas si vite, tu viens \xE0 peine d\u2019arriver ! "
+  - "Les mots d\u2019un v\xE9ritable aventurier ! D\u2019habitude, les humains que
+    je rencontre sont tous des trouillards. "
+  - "Ahahah, c\u2019est marrant de voir la peur sur ton visage ! "
+  - "Marrant ! Ca doit \xEAtre l\u2019heure de d\xEEner ! "
+  - "Dis-le si je t\u2019ennuie hein... "
+  - "Merci mais je suis allergique aux fruits de mer. Et puis, j\u2019ai tout ce qu\u2019il
+    me faut ici !"
+  - "Ca va ? T\u2019es tout p\xE2le\u2026"
+  - "H\xE9 h\xE9. Je suis une g\xE9nie je sais."
+  - "Bien, \xE9videmment !  "
+  - "Hey, n\u2019insulte pas mes amies ! "
+  - 'Rooh, ai un peu confiance en toi ! '
+  m_end:
+  - "C'\xE9tait cool de parler avec toi ! C\u2019est tellement rare un humain qui
+    vaut plus que son poids en viande\u2026 Si tu repasse dans le coin, je t\u2019inviterai
+    \xE0 d\xEEner ! "
+  - "Bon aller j\u2019ai trop faim ! Viens par ici petit humain\u2026"
+--- !u!212 &212116875988961680
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381405339561566}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fb3bc46843e833447bdc55bf5f74d485, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.84, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

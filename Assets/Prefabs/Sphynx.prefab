@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1156338355728352}
+  m_IsPrefabParent: 1
+--- !u!1 &1156338355728352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4579411864301370}
+  - component: {fileID: 114999055294560452}
+  m_Layer: 0
+  m_Name: Sphynx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1257820044321560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4678317007049716}
+  - component: {fileID: 212876386692833370}
+  m_Layer: 0
+  m_Name: Sphinx_pose1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4579411864301370
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156338355728352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 361, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4678317007049716}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4678317007049716
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257820044321560}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4, y: 1.8, z: 0}
+  m_LocalScale: {x: 2.2238076, y: 2.0247667, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4579411864301370}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114999055294560452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156338355728352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbeb6db02ef72e04ebe23f9d3940e293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_monsterData:
+    m_monsterType: 2
+    m_questions:
+    - "Qu\u2019est-ce qui s\u2019agite et se fatigue sur ma plage ?\t"
+    - "Qu\u2019est-ce se tra\xEEne, insignifiant, et se retrouve face \xE0 sa mort
+      ?"
+    - "Qu\u2019est qui renferme un tr\xE9sor dor\xE9 et qui n\u2019a pourtant ni charni\xE8re,
+      ni couvercle ni serrure pour y introduire une clef ?"
+    - "Si je jette deux esclaves du haut d\u2019une pyramide, lequel meurt en premier
+      ?"
+    - "Maintenant que nous avons fait connaissance, et que ton insolente existence
+      continue, donne moi une seule et unique raison de te maintenir en vie ?\t"
+    m_answerQ1:
+    - "Euh\u2026 "
+    - "Un bernard l\u2019hermite ?"
+    - "Oh non\u2026"
+    - Moi je suppose.
+    m_answerQ2:
+    - "Deux fois la m\xEAme r\xE9ponse, c\u2019est trop facile..."
+    - "Ma mis\xE9rable carcasse"
+    - "Plut\xF4t jolie, ma mort\u2026"
+    - "C\u2019est oblig\xE9 les devinettes ?"
+    m_answerQ3:
+    - Ma vessie.
+    - Un morceau de minerai
+    - Un oeuf.
+    - "Euh\u2026 Moi ?"
+    m_answerQ4:
+    - "Ils meurent en m\xEAme temps"
+    - "Eh ! C\u2019est pas tr\xE8s sympa ! "
+    - Une pyramide ?
+    - "Euh\u2026 Je me sens mal\u2026"
+    m_answerQ5:
+    - Je sais ramener la balle !
+    - 'Donnez moi une arme et je tuerai en votre nom ! '
+    - "Je suis un excellent cuisiner, d\u2019ailleur je poss\xE8de mon propre restaurant
+      \ !\t"
+    - "J\u2019ai trois chats \xE0 la maison !"
+  m_win: {fileID: 8300000, guid: 38fde829f531d6f42ade0b1dfc758507, type: 3}
+  m_loose: {fileID: 8300000, guid: 5f2204e12c56a9042893127166e27d0f, type: 3}
+  m_happy: {fileID: 8300000, guid: ad75bc644e0428740a3ed3f642521f56, type: 3}
+  m_fail: {fileID: 8300000, guid: 57578eba13cabc446ab3cca9eb0f5dce, type: 3}
+  m_interraction: {fileID: 8300000, guid: ac24b6092a3b68a429b301ebb4267b8d, type: 3}
+  m_BasicPoseSprite: {fileID: 21300000, guid: cddf67513a7c9ff44927010a754089a9, type: 3}
+  m_HappyPoseSprite: {fileID: 21300000, guid: 74d81bffa59878f4f8d5267467bf5522, type: 3}
+  m_AngryPoseSprite: {fileID: 21300000, guid: b3d09886be62892469552d2e7c557d2c, type: 3}
+  m_gameOverSprite: {fileID: 21300000, guid: 80d0adbef4922aa4ba5304d89943747f, type: 3}
+  m_gameOverBackground: {fileID: 21300000, guid: 4027c848c3bde3942853e13c60cbad19,
+    type: 3}
+  m_ahegaoSprite: {fileID: 0}
+  m_textBoxSprite: {fileID: 21300000, guid: 89fb831d013150146a6b6ed10b9412e3, type: 3}
+  m_nameBoxSprite: {fileID: 21300000, guid: 82db0d3002712c34599edfec08a4c926, type: 3}
+  m_intro: "Doucement, la fatigue engourdit tes membres et finalement, tes jambes
+    l\xE2chent. Lourdement, tu tombe dans le sable. Le soleil tape et tes yeux te
+    br\xFBlent. A genoux sur la plage, tu entends \xE0 peine les lourds battements
+    d\u2019ailes s\u2019approcher, et ce n\u2019est qu\u2019au moment o\xF9 tu sens
+    un souffle chaud sur ta nuque que tu te r\xE9sous \xE0 redresser ta t\xEAte."
+  m_dialog: []
+  m_quote:
+  - "Trop lent !\t"
+  - Non
+  - Viens jouer...
+  - Exact.
+  - "Je veillerai \xE0 mieux varier."
+  - Correct.
+  - "Int\xE9ressant."
+  - Oui.
+  - "Tu te crois dr\xF4le ?"
+  - 'Original mais acceptable. '
+  - BIen.
+  - "Bien tent\xE9 mais non."
+  - Parfait.
+  - "Je ne suis pas \u201Csympa\u201D."
+  - Idiot.
+  - Tu fais bien.
+  - Un talent comme un autre.
+  - "J\u2019aime tuer par moi-m\xEAme."
+  - Je hais la viande cuite.
+  - "Et c\u2019est \xE7a ta raison ?"
+  m_end:
+  - "Ca fait plaisir de trouver un bon joueur. On se fera une autre partie \xE0 l\u2019occasion."
+  - "Fini de jouer, j\u2019ai faim"
+--- !u!212 &212876386692833370
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257820044321560}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cddf67513a7c9ff44927010a754089a9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.84, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

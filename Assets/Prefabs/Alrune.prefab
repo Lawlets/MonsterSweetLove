@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1250550015255962}
+  m_IsPrefabParent: 1
+--- !u!1 &1250550015255962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4967827023681564}
+  - component: {fileID: 114081728272425022}
+  m_Layer: 0
+  m_Name: Alrune
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1816913660223368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4095840962607502}
+  - component: {fileID: 212203629066456202}
+  m_Layer: 0
+  m_Name: Plante_pose1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4095840962607502
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816913660223368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: -5.9, z: 0}
+  m_LocalScale: {x: 2.9458497, y: 2.627073, z: 1.5789027}
+  m_Children: []
+  m_Father: {fileID: 4967827023681564}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4967827023681564
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250550015255962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 436.8, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4095840962607502}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114081728272425022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250550015255962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea49352d5f9c1d48a3cd564ff13d834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_monsterData:
+    m_monsterType: 4
+    m_questions:
+    - "Alors, qu\u2019est ce que \xE7a fait de se retrouver face \xE0 moi ? \t"
+    - "Tu sais de quoi j\u2019ai envie l\xE0 ?"
+    - "Continuons sur notre lanc\xE9e ! Que ferais tu pour te distraire en ma compagnie
+      ?\t"
+    - "On parle de tout ce que je peux te donner mais dis moi\u2026 Qu\u2019as tu
+      \xE0 offrir en \xE9change."
+    - Suis-je une jolie plante pour toi ?
+    m_answerQ1:
+    - "Je ne suis pas tr\xE8s impressionn\xE9."
+    - "Vous \xEAtes\u2026 Sublime\u2026"
+    - Je suis allergique au pollen.
+    - "C\u2019est stimulant."
+    m_answerQ2:
+    - De me manger..?
+    - "Que je vous arrache les p\xE9tals un par un ! "
+    - De rempoter des mandragores.
+    - De vous faire raboter le pistil ?
+    m_answerQ3:
+    - "Pas mal de jardinage j\u2019imagine\u2026"
+    - "J\u2019ai bien une id\xE9e\u2026"
+    - "Je ne comptais pas vraiment m'\xE9terniser..."
+    - "Je sais pas\u2026 du babyfoot ?"
+    m_answerQ4:
+    - "J\u2019ai deux mains vertes vous savez ?"
+    - "Je peux tout aussi bien \xEAtre l'\xE9l\xE8ve ou le ma\xEEtre..."
+    - "J\u2019ai une collection impressionnante de carte pokemon !"
+    - "J\u2019ai de l\u2019amour \xE0 revendre !"
+    m_answerQ5:
+    - "Jolie ?! En ce moment je r\xEAve de vous butiner ! "
+    - "Une belle plante comme vous a besoin d\u2019attention et j\u2019ai la main
+      verte..."
+    - ' Vous me rappelez la vieille plante de chez ma mamie, elle est morte le mois
+      dernier.'
+    - "J\u2019avoue que j\u2019ai vu mieux chez Jardiland."
+  m_win: {fileID: 8300000, guid: e2a813624ba4ec944a895ba27e5b0e76, type: 3}
+  m_loose: {fileID: 8300000, guid: c74085c88a4ae3d4984da035d1809d44, type: 3}
+  m_happy: {fileID: 8300000, guid: 8216866a0068cee488f361aa4dfebfd7, type: 3}
+  m_fail: {fileID: 8300000, guid: 719034ef0735ad849bc461d119d74b9c, type: 3}
+  m_interraction: {fileID: 8300000, guid: ab9d1b639d308d649add48846ce9162e, type: 3}
+  m_BasicPoseSprite: {fileID: 21300000, guid: 2a32c7387ddac644a82258e2930fd456, type: 3}
+  m_HappyPoseSprite: {fileID: 21300000, guid: 0011d9c110a2e2b4180e6db9c042646a, type: 3}
+  m_AngryPoseSprite: {fileID: 21300000, guid: 6d4cf1b19f8a2bb4db626e32ed429474, type: 3}
+  m_gameOverSprite: {fileID: 21300000, guid: 7782f4e7176dd3c4391fac3128666ec0, type: 3}
+  m_gameOverBackground: {fileID: 21300000, guid: 4472613ebc6e7a84da61a7354cc117cf,
+    type: 3}
+  m_ahegaoSprite: {fileID: 21300000, guid: 4b2ec3f4c8e64e74ba98596eb1080362, type: 3}
+  m_textBoxSprite: {fileID: 21300000, guid: 23c1dc5db356a2c4586e2ba442299aac, type: 3}
+  m_nameBoxSprite: {fileID: 21300000, guid: 308ef11021f6417479e22ac9ad679af8, type: 3}
+  m_intro: "La gorge s\xE8che, les tempes battantes et le souffle court, tu vois la
+    fin approch\xE9. Cela fait bien longtemps que tu ne sent plus tes jambes, mais
+    celles-ci continues d\u2019avancer miraculeusement. Les yeux entrouvert, tu discerne
+    \xE0 peine l\u2019imposante figure se dressant face \xE0 toi."
+  m_dialog: []
+  m_quote:
+  - Tu le devrais !
+  - Tu vas me faire rougir...
+  - "C\u2019est malheureux."
+  - Ah oui ?
+  - "H\xE9h\xE9h\xE9..."
+  - "Oh ~ Tu n\u2019oserais pas !"
+  - "Tiens ta langue ou c\u2019est toi qui finira enterr\xE9."
+  - Roh ~ Un peu de tenue voyons !
+  - "J\u2019imagine tr\xE8s bien..."
+  - "Je suis s\xFBre qu\u2019elle me plaira."
+  - "Ca, ce n\u2019est pas ton choix mon chou."
+  - "Es-tu vraiment idiot \xE0 ce point ?"
+  - "J'esp\xE8re que tu es aussi comp\xE9tent que ce que tu pr\xE9tend !"
+  - "Donner ou recevoir\u2026 dur de choisir..."
+  - "Je\u2026 ne suis pas int\xE9ress\xE9e."
+  - "Bah ! La romance c\u2019est surfait !"
+  - "J\u2019ai h\xE2te de voir ca !"
+  - "Tu m\u2019en diras tant\u2026"
+  - "Tu pourrais bien vite subir le m\xEAme destin !"
+  - Et moi sur Tinder.
+  m_end:
+  - "Qui aurait cru qu\u2019un humain comme toi existait\u2026 Tu est trop pr\xE9cieux
+    pour que je te laisse faner. Allez, approche."
+  - "Voil\xE0 qui est d\xE9cevant ! Apr\xE8s tous ces efforts, ton voyage s'arr\xEAte
+    ici."
+--- !u!212 &212203629066456202
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816913660223368}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2a32c7387ddac644a82258e2930fd456, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 14.03, y: 21.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3eda6f7605300d448855085ee34fb6bc
+timeCreated: 1523479563
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tall Casat Med PERSONAL USE
+  fontNames:
+  - Tall Casat Med PERSONAL USE
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
